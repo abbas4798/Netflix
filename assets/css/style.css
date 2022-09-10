@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Muli", sans_serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.text {
+  position: absolute;
+  text-transform: uppercase;
+  top: 420px;
+  cursor: context-menu;
+  font-size: 23px;
+  color: #e50913a8;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+p.text:hover {
+  font-size: 24px;
+  letter-spacing: 8px;
+  transition: 0.8s cubic-bezier(0.68, -0.03, 0.38, 0.43);
+}
+.Logo {
+  padding: 0;
+  margin: -2;
+  width: 76%;
+  height: 70px;
+  border-radius: 2px;
+}
+.Logo:hover {
+  width: 87%;
+  transition: 0.4s;
+}
+.nav_btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+.open_btn {
+  background: transparent;
+  cursor: pointer;
+  position: fixed;
+  opacity: 0.4;
+  border: none;
+  font-size: 44px;
+  transition: 0.3s ease-in;
+  top: 10px;
+  left: 10px;
+}
+.open_btn:hover {
+  color: #d22528;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+.nav.visible {
+  transform: translateX(0);
+}
+.nav_black {
+  background-color: rgb(34, 31, 31);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+.nav_black.visible {
+  transition-delay: 0.2s;
+}
+.nav_red {
+  background: #e50913a8;
+  width: 95%;
+  transition-delay: 0.2s;
+}
+.nav_red.visible {
+  transition-delay: 0.4s;
+}
+.nav_white {
+  background: #e1dfdf;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0;
+}
+.nav_white.visible {
+  transition-delay: 0.6s;
+}
+.close_btn {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  transition: 0.7s cubic-bezier(0.68, -0.03, 0.38, 0.43);
+}
+.close_btn:hover {
+  color: white;
+  font-weight: 700;
+  background: red;
+  font-size: 24px;
+  outline: 4px solid red;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+.list li {
+  margin: 20px 0;
+}
+.list li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s ease-in;
+}
+.list li a:hover {
+  color: red;
+  font-weight: 500;
+}
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
